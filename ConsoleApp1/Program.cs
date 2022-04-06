@@ -9,11 +9,11 @@ class Program
     static void Main()
     {
         Console.Write("x = ");
-        double x = double.Parse(Console.ReadLine());
+        //double x = double.Parse(Console.ReadLine());
         double y, j;
         try
         {
-            y = Math.Sqrt(x + 1);
+            y = Math.Sqrt(double.Parse(Console.ReadLine()) + 1);
             j = y;
         }
         catch
@@ -26,7 +26,7 @@ class Program
             y = Math.Cbrt(9 - y);
         }
         catch
-        { 
+        {
             Console.WriteLine("Невозможно извлечь кубический корень из данного выражения.");
             return;
         }
